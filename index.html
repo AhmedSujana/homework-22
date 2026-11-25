@@ -1,0 +1,51 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>homework-22</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- 1st page start -->
+        <section id="welcomeScreen">
+            <h1>Wanna Play game?</h1>
+            <input type="text"  id="inputName" placeholder="What is your name">
+            <button id="startBtn">Start Game</button>
+            <div id="errorMsg" hidden>Name Is Missing</div>
+        </section>
+        <!-- 1st page end -->
+
+            <!-- 2nd page start-->
+         <section id="gameScreen" hidden>
+            <h2>Player - 1</h2>
+            <input type="text" id="inputNumber" placeholder="Give a number">
+            <button id="playBtn">Let's Play</button>
+            <div id="numberError" hidden>Please give a number</div>
+        </section>
+           <!-- 2nd page end -->
+<!-- 3rd page start - Player 2 Name -->
+  <section id="player2Screen" hidden>
+    <h2>Player - 2 Name</h2>
+    <input type="text" id="player2Name" placeholder="What is your name">
+    <button id="player2Btn">Start Game</button>
+    <div id="player2Error" hidden>Name Is Missing</div>
+  </section>
+  <!-- 3rd page end -->
+
+  <!-- 4th page start - Guess -->
+  <section id="guessScreen" hidden>
+    <h2>Player - 2 Guess</h2>
+    <input type="text" id="guessInput" placeholder="Guess the number">
+    <button id="guessBtn">Guess</button>
+    <div id="guessError" hidden>Please guess a number</div>
+    <p id="chanceText"></p>
+    <p id="resultText"></p>
+  </section>
+  <!-- 4th page end -->
+        <script src="js/script.js"></script>
+    </body>
+    </html>
+    
